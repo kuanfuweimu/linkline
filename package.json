@@ -1,0 +1,15 @@
+{
+  "name": "linkline-figma-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "description": "FigJam-style connectors between elements in Figma Design.",
+  "scripts": {
+    "test": "node test/check.cjs",
+    "typecheck": "tsc --allowJs --checkJs --noEmit --skipLibCheck --strict false --noImplicitAny false --useUnknownInCatchVariables false --target ES2020 --lib ES2020 code.js node_modules/@figma/plugin-typings/index.d.ts",
+    "check": "npm run test && npm run typecheck"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "1.142.0",
+    "typescript": "7.0.2"
+  }
+}
